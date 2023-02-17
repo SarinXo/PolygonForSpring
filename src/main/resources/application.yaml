@@ -1,0 +1,16 @@
+datasource:
+ acq:
+  clients:
+   pool-name: acq
+   driver-class-name: org.postgresql.Driver
+   jdbc-url: jdbc:postgresql://localhost:5432/client_data_db
+   username: root
+   password: root
+spring:
+ flyway:
+  enabled: true
+  schemas: clients_data
+ jpa:
+  properties:
+   hibernate:
+    default_schema: clients_data
